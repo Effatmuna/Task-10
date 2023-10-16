@@ -1,0 +1,492 @@
+:root {
+    --primary-color: #393841;
+    --text-color: #B5B4B9;
+    --button-color: #2ACFD4;
+    --button-padding: 15px 40px;
+    --border-radius: 30px;
+    --margin: 100px 0px;
+    --font-family: Arial;
+    --font-size-text: 16px;
+    --fon-size-title: 40px;
+    --padding: 30px 60px;
+    --content-margin: 40px 0px;
+    --line-height: 75px;
+    --mobile-padding: 40px 30px;
+    --hover-color:#b7e7e9;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+.container {
+    padding: 40px 150px;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+}
+
+.header .logo-menu {
+    display: flex;
+
+}
+
+.logo {
+    flex: 1;
+}
+
+.header .fa-bars {
+    display: none;
+}
+
+.header-menu {
+    margin-left: 50px;
+    flex: 7;
+
+}
+
+.header-menu-list ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+.header-menu-list ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+button{
+    cursor: pointer;
+    
+}
+.header-icons .login {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #B5B4B9;
+    border: none;
+    background-color: #ffff;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+}
+
+.header-icons .signup {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-color);
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+}
+.signup:hover{
+    background-color:var(--hover-color);
+}
+.header-menu-list ul li a:hover{
+    color: black;
+}
+
+/*Shorter Section*/
+.shorter-section {
+    position: relative;
+    display: flex;
+    padding-left: 150px;
+    align-items: center;
+    height: 500px;
+    margin: var(--content-margin);
+    font-family: var(--font-family);
+}
+
+.shorter-texts {
+    flex: 2;
+}
+
+.shorter-section h1 {
+    font-size: 70px;
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    font-weight: 800;
+    color: #392F52;
+
+}
+
+.shorter-section p {
+    line-height: 25px;
+
+    font-size: var(--font-size-text);
+    color: var(--text-color);
+}
+
+.shorter-section a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--button-color);
+    padding: var(--button-padding);
+    border-radius: var(--border-radius);
+    color: white;
+    margin-top: 40px;
+
+}
+
+.shorter-section .shorter-image {
+    overflow: hidden;
+    flex: 2;
+
+
+}
+.shorter-section a:hover{
+    background-color: var(--hover-color);
+}
+
+/*Shorten Bar*/
+.container-2 {
+    background-color: #F0F1F6;
+    position: relative;
+    margin-top: 100px;
+
+
+}
+
+.shorter-bar {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -9%;
+    left: 10%;
+    background-color: #4B406B;
+    border-radius: 5px;
+    background-image: url(img/background.png);
+    background-repeat: no-repeat;
+    width: 80%;
+
+
+}
+
+.shorter-bar input {
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 70%;
+    background-color: white;
+    margin-right: 10px;
+    font-size: var(--font-size-text);
+    
+
+}
+
+.shorter-bar a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    padding: var(--button-padding);
+    border-radius: 5px;
+    color: white;
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    font-weight: bold;
+
+}
+.shorter-bar a:hover{
+    background-color: var(--hover-color);
+}
+
+/*Advance Statistics*/
+.advance-statistics {
+    padding: 110px 0px 60px 0px;
+    width: 100%;
+    position: relative;
+
+}
+
+.advance-header {
+    text-align: center;
+}
+
+.advance-header h1 {
+    font-size: var(--fon-size-title);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+}
+
+.advance-header p {
+    line-height: 25px;
+    font-size: var(--font-size-text);
+    color: var(--text-color);
+
+}
+
+.advance-stat-cards {
+    display: flex;
+    margin: 80px 20px;
+}
+.back{
+    height: 5px;
+    width: 500px;
+    position: absolute;
+    top:65%;
+    left: 30%;
+    background-color: #2ACFD4;
+}
+.advance-single-card {
+    background-color: white;
+    margin: 0px 20px;
+    padding: 30px;
+    position: relative;
+    font-family: var(--font-family);
+}
+
+.advance-single-card h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    
+}
+
+.advance-single-card p {
+    font-size: 17px;
+    color: var(--text-color);
+}
+
+.advance-single-card img {
+    background-color: #392F52;
+    padding: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+}
+
+#card-2 {
+    top: 40px;
+
+}
+
+#card-3 {
+    top: 80px;
+}
+
+
+/*Booker Bar*/
+.booked-bar {
+    height: 200px;
+    background-color: #4B406B;
+  
+    background-image: url(img/background.png);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+
+
+}
+
+.booked-bar h1 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+.booked-bar a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--button-color);
+    border-radius: var(--border-radius);
+    color: white;
+    padding: var(--button-padding);
+    font-size: var(--font-size-text);
+    font-weight: bold;
+}
+.booked-bar a:hover{
+    background-color: var(--hover-color);
+}
+
+/*Footer*/
+
+footer {
+    height: 250px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+}
+
+.footer-logo h1 {
+    font-size: var(--fon-size-title);
+}
+
+.footer-logo,
+.footer-body,
+.footer-icons {
+    margin-top: 20px;
+}
+
+.footer-body {
+    display: flex;
+
+}
+
+.footer-single-card {
+    margin: 0px 30px;
+}
+
+.footer-single-card h4 {
+    margin-bottom: 10px;
+}
+
+.footer-single-card ul {
+    list-style-type: none;
+    line-height: 30px;
+    color: var(--text-color);
+}
+.footer-single-card ul li:hover{
+    color:var(--button-color) ;
+    cursor: pointer;
+}
+.footer-icons i {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.footer-icons i:hover{
+  color: #2ACFD4;
+}
+
+/*Responsiveness*/
+
+@media screen and (max-width:500px) {
+    .container {
+        padding: 40px 30px;
+    }
+
+    .header .fa-bars {
+        display: block;
+        box-sizing: border-box;
+        margin-left: 45vw;
+
+
+    }
+
+    .header-menu-list {
+        display: none;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+
+    .shorter-section {
+        height: 500px;
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    .shorter-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .shorter-section h1 {
+        font-size: 60px;
+        line-height: 55px;
+        text-align: center;
+
+    }
+
+    .shorter-image img {
+        height: 500px;
+    }
+
+    .shorter-bar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .shorter-bar input {
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        margin: 0px 5px;
+        width: 100%;
+    }
+
+    .shorter-bar a {
+        margin-top: 10px;
+        width: 100%;
+    }
+   .back{
+    display: none;
+   }
+    .advance-stat-cards {
+        flex-direction: column;
+
+    }
+
+    .advance-single-card {
+        margin-top: 30px;
+    }
+
+    .advance-single-card img {
+        right: 28vw;
+
+    }
+
+    .booked-bar {
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    .booked-bar h1 {
+        font-size: var(--fon-size-title);
+    }
+
+    footer {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-body ul {
+        margin-bottom: 30px;
+    }
+
+}
